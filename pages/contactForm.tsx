@@ -1,7 +1,7 @@
 const contactForm = () => {
   return (
     <div>
-      <form name="contact" method="POST" data-netlify="true">
+      <form name="contact" action="/index" method="POST" data-netlify="true">
         <div className="w-full">
           <h1 className="p-4 text-2xl font-Ubuntu ">
             Drop me a <b>Message</b> here!!
