@@ -152,7 +152,7 @@ export const Projects: IProject[] = [
     name: "News Aggregator",
     description: "This application is to demonstrate skills of web scraping,Ionic Framework,NodeJS and ExpressJS",
     image_path: "/Images/NewsAppPic3.png",
-    deployed_url: "",
+    deployed_url: "/apks/News_App.apk",
     github_url: "https://github.com/saicharankr/NewsApi , https://github.com/saicharankr/NewsZone",
     category:["Ionic","Angular","Node","Express"],
     key_techs: ["TypeScript","Ionic","Angular","Django","Node","Express","JavaScript"],

@@ -54,7 +54,7 @@ const ProjectCard: FunctionComponent<{ project: IProject }> = ({
                 href={deployed_url}
                 className="flex items-center px-4 py-2 space-x-3 text-lg bg-gray-200 font-Kaushan dark:bg-black-200 dark:text-gray-200 rounded-2xl"
                 target="_blank"
-              >
+              download>
                 <AiFillProject />
                 <span>Project</span>
               </a>
