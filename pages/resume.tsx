@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 import Bar from "../components/Bar";
 import { Skills, frameWorks, ResumeDetails } from '../data'
@@ -34,7 +35,7 @@ const resume = () => {
               <h1 className="font-semibold font-Ubuntu text-lg">Detailed Resume :- </h1>
             </div>
             <div className="font-Averia font-semibold text-lg underline">
-              <a href="https://docs.google.com/document/d/1-y4DNCNmDH50jmDwkWvjwLRytwx9Kv94nqzCiJy5isA/edit?usp=sharing" target="_blank"> Click here</a>
+              <Link href="/pdfResume"> Click here</Link>
             </div>
           </div>
 
