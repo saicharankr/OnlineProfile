@@ -1,4 +1,4 @@
-import { IService, ISkill, IProject, Category } from './type';
+import { IService, ISkill, IProject, Category, IResumeDetails, IFramework } from './type';
 import { GiSpiderWeb, GiTeacher } from "react-icons/gi";
 import {BsStar} from "react-icons/bs"
 import { FaAngular } from "react-icons/fa"
@@ -18,7 +18,7 @@ export const services: IService[] = [
     id:2,
     Icon: FaAngular,
     title: "Front End Development",
-    desc:" I can develop beautiful SPA using Angular , Next.js , React.js\n and simple organic websites using  HTML ,scss ,css,Typescript,JavaScript"
+    desc:" I can develop beautiful SPA using Angular , Next.js , React.js and simple organic websites using  HTML ,scss ,css,Typescript,JavaScript"
   },
   {
     id:3,
@@ -36,20 +36,14 @@ export const services: IService[] = [
     id:5,
     Icon: GiSpiderWeb,
     title: "Web Scraping",
-    desc:" 1. Using Python libraries like beautiful soup and selenium\n2. Using Node.js cheerio , axios"
+    desc:" 1. Using Python libraries like beautiful soup and selenium 2. Using Node.js cheerio , axios"
   },
   {
     id:6,
     Icon: MdDeveloperMode,
     title: "Cross platform Mobile App Development",
     desc:"Develop Cross Platform Mobile Apps using Ionic Framework"
-  },
-  {
-    id:7,
-    Icon: SiCodewars,
-    title: "Competitive Programmer and Problem Solver",
-    desc:"I solve problems in Codewars,HackEarth,HackerRank,TechGig"
-  },
+  }
 ]
 
 export const Skills: ISkill[] = [
@@ -97,43 +91,33 @@ export const Skills: ISkill[] = [
   },
 ]
 
-export const frameWorks: ISkill[] = [
-  {
-    id: 1,
-    Icon: BsStar,
-    name: "FastApi/Flask/Django",
-    level: "100"
-  },
-  {
-    id: 2,
-    Icon: BsStar,
-    name: "Numpy/Pandas/matplotlib/</br>Tensorflow/Keras/SkLearn/NLTK",
-    level: "100"
-  },
-  {
-    id: 3,
-    Icon: BsStar,
-    name: "Selenium/BeautifulSoup",
-    level: "100"
-  },
-  {
-    id: 4,
-    Icon: BsStar,
-    name: "React/Next.js/Node.js/Ionic/</br>Angular/</br>Joint.js/Rappid.js/</br>KnockOut.js/HighCharts/d3js",
-    level: "100"
-  },
-  {
-    id: 5,
-    Icon: BsStar,
-    name: "ASP.NET CORE MVC/Unity",
-    level: "100"
-  },
-  {
-    id: 7,
-    Icon: BsStar,
-    name: "Bootstrap/TailwindCss",
-    level: "100"
-  },
+export const frameWorks: IFramework[] = [
+ {
+   id:1,
+   technology:"Backend Technologies",
+   frameworks:"ASP.NET core MVC ,ASP.NET core Web API,FastAPI ,Nodejs ,ExpressJs."
+ },
+ {
+  id:2,
+  technology:"Front Technologies",
+  frameworks:"Angular 6+ ,ReactJs , Ionic 5+ Framework,Next.js,jQuery ,Bootstrap ,TailwindCSS."
+},
+{
+  id:3,
+  technology:"Database Technologies",
+  frameworks:"MsSql,MySql,MongoDb,PgSql."
+},
+{
+  id:4,
+  technology:"Version Control",
+  frameworks:"Git,Bitbucket."
+},
+{
+  id:5,
+  technology:"Data Analytics",
+  frameworks:"Pandas ,Numpy,Jupyter Notebook,CSV ,Excel"
+}
+
 ]
 
 export const Projects: IProject[] = [
@@ -199,3 +183,10 @@ export const Projects: IProject[] = [
   },
 ]
 
+export const ResumeDetails:IResumeDetails = {
+  college_name: "The Oxford College of Engineering",
+  engineering_branch:"Mechatronics Engineering",
+  engineering_batch:"2015-2019",
+  current_job:"Brenolabs Pvt Ltd.",
+  job_title:"Software Developer",
+}

@@ -1,8 +1,7 @@
-import { FunctionComponent } from "react";
 import { IconType } from "react-icons";
 
 export interface IService {
-  id:number
+  id: number
   Icon: IconType;
   title: string;
   desc: string;
@@ -24,6 +23,20 @@ export interface IProject {
   github_url: string;
   category: Category[];
   key_techs: string[];
+}
+
+export interface IResumeDetails {
+  college_name: string,
+  engineering_branch: string,
+  engineering_batch: string,
+  current_job: string,
+  job_title: string
+}
+
+export interface IFramework {
+  id: number,
+  technology: string,
+  frameworks: string,
 }
 
 export type Category = "React" | "Node" | "Express" | "Django" | "Mongo" | "Ionic" | "Angular" | "Python" | "Web Scraping" | "Data Science" | "Blogs/Articles" | "Chat Bot";

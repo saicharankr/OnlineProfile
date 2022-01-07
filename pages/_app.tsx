@@ -15,9 +15,6 @@ function MyApp({ Component, pageProps }) {
           <Navbar />
           <Component {...pageProps} />
         </div>
-        <div className="col-span-12 p-4 text-center bg-white rounded-2xl dark:bg-black-300">
-          <Feedback />
-        </div>
       </div>
     </ThemeProvider>
   );
